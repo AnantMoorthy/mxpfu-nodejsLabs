@@ -50,6 +50,7 @@ router.get("/lastName/:lastName",(req,res)=>{
     //res.send("Yet to be implemented") This line is to be replaced with actual return value
   });
 
+//sorting all users based on date of birth
 function getDateFromString(strDate) {
     let [dd,mm,yyyy] = strDate.split('-')
     return new Date(yyyy+"/"+mm+"/"+dd);
